@@ -1,0 +1,374 @@
+.contenitoreTitolo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.titolo{
+    margin-top: 33px;
+    
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.immagineAcqua{
+    height: 100px;
+    width: 100px;
+    background-image: url(../images/download.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+.writeQuestionYouNeedBnb{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.youCanAccessDownBelow{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 23px;
+    margin-top: 10px;
+}
+.contenitoreConnectButton{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+.writePleaseConnectWallet{
+  
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    margin-top: 15px;
+}
+.connectButton{
+    height :auto; 
+    border: solid  rgb(0, 179, 255) 2px; 
+    width: auto; 
+    border-radius: 10px;
+    font-size: 25px;
+    
+}
+.connectButton:hover{
+ 
+    border: solid rgb(0, 120, 189) 2px; 
+  
+}
+.writeBscTestnetOnly{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    margin-top: 10px;
+    color: red; 
+}
+.contenitoreConnectedButton{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+.connectedButton{
+    height : auto; 
+    border: solid rgb(0, 179, 255) 2px; 
+    width: auto; 
+    border-radius: 10px;
+    font-size: 25px;
+  
+}
+.connectedButton:hover{
+  border: solid rgb(0, 120, 189) 2px;
+}
+.contenitoreFotoBscEScrittaBalance{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 55px;
+}
+.photoBsc{
+    height: 75px;
+    width: 75px;
+    background-image: url(../images/download-1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+.writeFaucetContractBalance{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+   margin: 10px; 
+   margin-top: 30px;
+}
+.contenitoreRequestBnb{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+.requestBnbButton{
+    height : auto; 
+    border: solid rgb(0, 179, 255) 2px; 
+    width: auto; 
+    border-radius: 10px;
+    font-size: 25px;
+}
+.requestBnbButton:hover{
+  border: solid rgb(0, 120, 189) 2px;
+}
+.contenitorePadreDivRequest{
+    width: 98%;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 270px;
+}
+.padreDivRequest{
+    height: 180px; 
+    border: solid 2px white; 
+    width: 610px; 
+    background-color: black;
+    border-radius: 20px;
+}
+
+
+
+
+
+@media screen and (max-width: 435px){
+  .padreDivRequest{
+    height: 210px; 
+    border: solid 2px white; 
+    width: 350px; 
+    background-color: black;
+    border-radius: 20px;
+  }
+ .contenitoreLoader{
+  margin-top: 30px;
+ }
+ .padreDivTxCompleted{
+  height: 180px; 
+  border: solid 2px white; 
+  width: 340px; 
+  background-color: black;
+  border-radius: 20px;
+ }
+}
+
+
+
+
+
+.writeJoiningAtTxHash{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+.contenitoreSrcittaTxHash{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; 
+  height: 20px; 
+}
+.requestBnbTxHash{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    padding: 5px; 
+
+}
+.contenitoreLoader{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.loader{
+    
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  .contenitorePadreDivTxCompleted{
+    width: 98%;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 270px;
+  }
+  .padreDivTxCompleted{
+    height: 180px; 
+    border: solid 2px white; 
+    width: 610px; 
+    background-color: black;
+    border-radius: 20px;
+  }
+  .writeTxCompleted{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .contenitoreClose{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    
+  }
+  .closeButton{
+    height: auto; 
+    width: auto; 
+    border-bottom:  white 2px solid; 
+    border-left: white 2px solid;
+    border-top: black 2px solid;
+    border-right: black 2px solid;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white; 
+    background-color: black;
+  }
+  .closeButton:hover{
+    transition: 2s;
+    background-color: white;
+    color: black; 
+  }
+  .contenitoreSpuntaBlu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .spuntaBlu{
+    height: 110px; 
+    width: 110px; 
+    background-image: url(../images/spuntaBluFattaBene.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .peopleFundedWrite{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .numberOfTimePeopleHaveBeenFunded{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .backedBy{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .contentitoreSpuntaBluEDaniel{
+    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  }
+  .spuntaBluu{
+    height: 27px;
+    width: 27px; 
+    background-image: url(../images/verificato.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .danielEth{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black;
+    margin-top: 2px;
+    margin-left: 3px;
+  }
+  .contenitoreTwitterButtonDanielEth{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+  }
+  .buttonDiv{
+    height: auto;
+    width: auto;
+    border: solid black 2px; 
+    border-radius: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 2px;
+   background-color: white;
+ 
+  }
+  .buttonDiv:hover{
+    
+      background-color: black;
+      transition: 1s;
+.writeDanielEthTwitter{
+  color: white;
+  transition: 1s;
+}
+  }
+  .photoTwitter{
+    height: 25px;
+    width: 25px;
+    background-image: url(../images/X.png);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    border-radius: 5px;
+
+  }
+  .writeDanielEthTwitter{
+    display: inline-block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    
+    color: black; 
+    margin-left: 3px;
+  }
+  .ahrefTwitter{
+    padding: 2px;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    text-decoration: none;
+  
+  }
+.userCantClaim{
+text-align: center;
+font: 18px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+color: red; 
+margin-top: 14px;
+}
+  .writeBnbChain{
+    text-align: center;
+font: 18px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+color: red; 
+margin-top: 14px;
+  }
