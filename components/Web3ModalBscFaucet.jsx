@@ -84,9 +84,10 @@ setNumberofTimePeopleHaveBeenFunded(getNumberofTimeUsersHaveBeenFunded.toString(
 
         setUserAddress(firstThree.toString()+ "..." + lastThree.toString() ); 
         const contract = new ethers.Contract(contractAddress, abi, signer); 
-        const giveBnb = await contract.withdrawToFundUsers(user.toString(),(ethers.utils.parseEther("0.0001"))); 
+        const giveBnb = await contract.withdrawToFundUsers(user.toString(),(ethers.utils.parseEther("0.01"))); 
        setTimeWhenClaiming(_timeWhenClaimining); 
        setWriteUserCantClaim(false); 
+      
         const getNumberofTimeUsersHaveBeenFunded = await contract.seeNumberOfPeopleFunded(); 
        setNumberofTimePeopleHaveBeenFunded(getNumberofTimeUsersHaveBeenFunded.toString()); 
       
@@ -94,6 +95,8 @@ setNumberofTimePeopleHaveBeenFunded(getNumberofTimeUsersHaveBeenFunded.toString(
         setRequestBnbTxHash(giveBnb.hash); 
         setLoaderActive(true); 
          const waitForRewardingUser = await giveBnb.wait(1); 
+         const getContractBalance = await contract.contractBalance(); 
+         setBalance((getContractBalance / 1e18).toString()); 
         setLoaderActive(false); 
         setDivRequestActive(false); 
 
@@ -184,7 +187,7 @@ return(
 <div className = "photoBsc"></div><div className = "writeFaucetContractBalance">FAUCET BALANCE: {showBalance} BNB</div>
 </div>
 <div className = "contenitoreRequestBnb">
-<button className = "requestBnbButton" onClick = {() => requestBNB()}>Request 0.001 BNB</button>
+<button className = "requestBnbButton" onClick = {() => requestBNB()}>Request 0.01 BNB</button>
 </div>
 {writeUserCantClaim? <><div className = "userCantClaim">User already claimed one time in the last hour</div></> 
 
